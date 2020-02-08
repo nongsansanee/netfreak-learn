@@ -71,3 +71,8 @@ Route::get('/series/{serie}', function (\App\Serie $serie) {
     ]);
 });
 
+Route::get('/play/{episode}',function(\App\Episode $episode){
+    //return $episode;
+    return view('episode.playVideo')->with(['episode'=>$episode]);
+});
+

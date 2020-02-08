@@ -5,7 +5,7 @@
     id="video"
     playsinline controls
     poster="">
-    <source src="https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_640_3MG.mp4" type="video/mp4" />
+    <source src="{{$episode->file_name}}" type="video/mp4" />
 </video>
 
 <script>const video = new Plyr("#video");</script>
