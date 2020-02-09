@@ -5,7 +5,7 @@
 @include('partials.navbar')
 
 <div class="container mt-5">
-    <h1 class="py-5">{{ $serie->title }}</h1>
+    <h1 class="py-3">{{ $serie->title }}</h1>
     <a
         class="btn btn-info"
         href="{{ url('/series/' . $serie->id . '/episodes/create') }}"
